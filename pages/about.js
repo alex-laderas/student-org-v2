@@ -15,8 +15,8 @@ export default function About() {
                 <Heading size='4xl' fontWeight='bold' color='yellow.200' textTransform='uppercase' mt={'-24rem'}>Student Assembly</Heading>
             </Container>
         </NavMain>
-        <Flex flexDir={'column'} w={'100vw'} bg={'backdrop.100'} pt={'2rem'} px={'4rem'}>
-            <Flex bgGradient={'linear(to-l, rgba(0, 0, 0, 0,), rgba(0, 0, 0, 1))'} py={'2rem'}>
+        <Flex flexDir={'column'} w={'100vw'} bg={'black'} pt={'2rem'} px={'4rem'}>
+            <Flex bgGradient={'linear(to-l, rgba(0, 0, 0, 0,), rgba(0, 0, 0, 1))'} py={'2rem'} justifyContent={[null, 'center', 'left']}>
                 <Box border={'2px'} maxW={'500px'} borderColor={'secondary.100'} borderRadius={'12px'} p={'2rem'} bg={'primary.100'}>
                     <HStack mt={'-10px'}>
                         <Text fontSize={'md'} fontWeight={'bold'} color={'secondary.100'}>Mission</Text>
@@ -28,7 +28,7 @@ export default function About() {
                     </Text>
                 </Box>
             </Flex>
-            <Flex flexDir={'row'} justifyContent={'right'} bgGradient={'linear(to-l, rgba(0, 0, 0, 0,), rgba(0, 0, 0, 1))'} py={'2rem'}>
+            <Flex flexDir={'row'} bgGradient={'linear(to-l, rgba(0, 0, 0, 0,), rgba(0, 0, 0, 1))'} py={'2rem'} justifyContent={[null, 'center', 'right']}>
                 <Box border={'2px'} maxW={'500px'} borderColor={'secondary.100'} borderRadius={'12px'} p={'2rem'} bg={'primary.100'}>
                     <HStack mt={'-10px'}>
                         <Text fontSize={'md'} fontWeight={'bold'} color={'secondary.100'}>Philosophy</Text>
@@ -40,7 +40,7 @@ export default function About() {
                     </Text>
                 </Box>
             </Flex>
-            <Flex bgGradient={'linear(to-l, rgba(0, 0, 0, 0,), rgba(0, 0, 0, 1))'} py={'2rem'}>
+            <Flex bgGradient={'linear(to-l, rgba(0, 0, 0, 0,), rgba(0, 0, 0, 1))'} py={'2rem'} justifyContent={[null, 'center', 'left']}>
                 <Box border={'2px'} maxW={'500px'} borderColor={'secondary.100'} borderRadius={'12px'} p={'2rem'} bg={'primary.100'}>
                     <HStack mt={'-10px'}>
                         <Text fontSize={'md'} fontWeight={'bold'} color={'secondary.100'}>Vision</Text>

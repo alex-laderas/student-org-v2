@@ -7,9 +7,8 @@ import NavMain from "../layout/NavMain";
 
 export default function Home() {
   return (
-  <>
     <NavMain>
-      <Container display='flex' flexDir='column' mt='-4rem' mx='10rem' w={'100vw'} justifyContent='center' h='full' overflow='hidden'>
+      <Container display='flex' flexDir='column' mt='-4rem' mx='6rem' w={'100vw'} justifyContent='center' h='full'>
         <VStack display='flex' flexDir='column' alignItems='left'>
           <Heading size='4xl' fontWeight='bold' color='yellow.200' textTransform='uppercase'>Student Assembly</Heading>
           <Heading as='h2' textShadow='0px 4px 4px#000000' size='md' color='white' fontWeight='medium' m='0' p='0'>Polytechnic University of the Philippines</Heading>
@@ -32,6 +31,5 @@ export default function Home() {
         </Button>
       </Container>
     </NavMain>
-  </>
   )
 }
