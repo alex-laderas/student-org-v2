@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, HStack, SimpleGrid, Stat, StatArrow, StatHelpText, StatLabel, StatNumber } from "@chakra-ui/react";
 
-import NavAdmin from "../../layout/NavAdmin";
+import NavSuperAdmin from "../../layout/NavSuperAdmin";
 
 
 
@@ -79,4 +79,4 @@ export default function Dashboard(){
     )
 }
 
-Dashboard.Layout = NavAdmin;
+Dashboard.Layout = NavSuperAdmin;

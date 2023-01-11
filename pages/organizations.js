@@ -31,7 +31,13 @@ export default function Organizations() {
                     </InputGroup>
                 </HStack>
                 <Flex px={'2rem'} my={'4rem'} justifyContent={'center'}>
-                    <SimpleGrid columns={[null, '1', '2']} spacing={'10'}>
+                    <SimpleGrid columns={[null, '1', '3']} spacing={'10'}>
+                        <Box bg={'blackAlpha.100'} minW={'350px'} minH={'350px'} borderRadius={'12px'}>
+                            
+                        </Box>
+                        <Box bg={'blackAlpha.100'} minW={'350px'} minH={'350px'} borderRadius={'12px'}>
+                            
+                        </Box>
                         <Box bg={'blackAlpha.100'} minW={'350px'} minH={'350px'} borderRadius={'12px'}>
                             
                         </Box>

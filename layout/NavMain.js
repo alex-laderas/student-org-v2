@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion"
 
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import { faUsersBetweenLines } from "@fortawesome/free-solid-svg-icons";
 
 import { useEffect, useState } from "react";
 
@@ -46,7 +47,14 @@ export default function NavMain({children}) {
                 Events
               </Button>
             </Link>
-            <Link href={'/organizations'} scroll={false} ><Button color='white' colorScheme='whiteAlpha' variant='ghost' size='lg'>Organizations</Button></Link>
+            <Link href={'/organizations'} scroll={false} >
+              <Button role={'group'} color='white' colorScheme='whiteAlpha' variant='ghost' size='lg'>
+                <Container _groupHover={{ display: 'block' }} px={'6px'} display='none'>
+                  <FontAwesomeIcon icon={faUsersBetweenLines} />
+                </Container>
+                Organizations
+              </Button>
+            </Link>
           </HStack>
           <Link href={'/login'} ><Button px='1.6rem' bg='yellow.200' colorScheme='yellow'>Login</Button></Link>
         </HStack>

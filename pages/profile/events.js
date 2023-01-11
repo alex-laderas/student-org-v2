@@ -17,25 +17,25 @@ export default function Events() {
                     </Link>
                 </HStack>
                 <SimpleGrid columns={[null, 1, 4]} spacing={'10'} m={'2rem'}>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
-                    <Box bg={'blackAlpha.100'} minW={'200px'} minH={'200px'} borderRadius={'12px'}>
+                    <Box bg={'blackAlpha.100'} minW={'full'} minH={'300px'} borderRadius={'12px'}>
                             
                     </Box>
                 </SimpleGrid>

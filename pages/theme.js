@@ -6,9 +6,13 @@ const thick = defineStyle({
   borderRadius: 10, // set border radius to 10
 })
 
-const dividerTheme = defineStyleConfig({
-  variants: { thick },
-})
+const breakpoints = {
+  sm: '320px',
+  md: '1350px',
+  lg: '1350px',
+  xl: '1400px',
+  '2xl': '1536px',
+}
 
 const colors = {
     black: {
@@ -31,6 +35,6 @@ const colors = {
     },
   }
   
-const theme = extendTheme({ colors, dividerTheme })
+const theme = extendTheme({ colors, breakpoints })
 
 module.exports = theme

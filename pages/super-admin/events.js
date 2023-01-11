@@ -1,15 +1,17 @@
 import { Card, CardBody, CardHeader } from "@chakra-ui/card";
-import { Box, Button, Flex, Heading, Input, Table, Tbody, Td, Textarea, Tfoot, Tr, VStack } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Input, Table, Tbody, Td, Textarea, Tfoot, Thead, Tr, VStack } from "@chakra-ui/react";
 
 import { faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import NavSuperAdmin from "../../layout/NavSuperAdmin";
 
-import NavAdmin from "../../layout/NavAdmin";
-
+import EventDetails from "../../layout/admin/eventDetails";
 
 export default function Events() {
     return (
         <>
+            <EventDetails/>
             <Flex w={'90vw'} bg={'white'} flexDir={[null, 'column', 'row']} justifyContent={'center'} p={'2rem'}>
                 <Flex flexDir={'column'} m={'2rem'} w={[null, '90%','60%']}>
                     <Card bg={'blackAlpha.100'} p={'2rem'} borderRadius={'10px'}>
@@ -17,22 +19,19 @@ export default function Events() {
                             <Heading size={'lg'}>Upcoming Events</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Table variant={'simple'} colorScheme={'blackAlpha'}>
+                            <Table variant={'striped'} colorScheme={'blackAlpha'}>
+                                <Thead>
+                                    <Tr fontWeight={'semibold'}>
+                                        <Td>Date</Td>
+                                        <Td>Event Name</Td>
+                                        <Td>Location/Venue</Td>
+                                    </Tr>
+                                </Thead>
                                 <Tbody>
                                     <Tr fontWeight={'semibold'} color={'blackAlpha.700'}>
-                                        <Td>01-01-2021</Td>
-                                        <Td>Event Name</Td>
-                                        <Td>Event Location</Td>
-                                    </Tr>
-                                    <Tr fontWeight={'semibold'} color={'blackAlpha.700'}>
-                                        <Td>01-01-2021</Td>
-                                        <Td>Event Name</Td>
-                                        <Td>Event Location</Td>
-                                    </Tr>
-                                    <Tr fontWeight={'semibold'} color={'blackAlpha.700'}>
-                                        <Td>01-01-2021</Td>
-                                        <Td>Event Name</Td>
-                                        <Td>Event Location</Td>
+                                        <Td>1-5-23</Td>
+                                        <Td>Webinar</Td>
+                                        <Td>Virtual</Td>
                                     </Tr>
                                 </Tbody>
                             </Table>
@@ -46,8 +45,8 @@ export default function Events() {
                             <Heading size={'lg'} >Post an Announcement</Heading>
                         </CardHeader>
                         <CardBody mt={'10px'}>
-                            <VStack spacing={'4'}>
-                                <Button variant={'solid'} colorScheme={'blackAlpha'} w={'full'}>Add Attachments</Button>
+                            <VStack spacing={'4'} justifyContent={'center'}>
+                                <Input type={'file'} variant={'solid'} colorScheme={'blackAlpha'} />
                                 <Input placeholder="title" variant={'outline'} bg={'white'} focusBorderColor={'primary.100'}></Input>
                                 <Textarea placeholder="body" variant={'outline'} bg={'white'} focusBorderColor={'primary.100'}></Textarea>
                             </VStack>
@@ -58,21 +57,23 @@ export default function Events() {
                     </Card>
                 </Flex>
                 <Flex m={'2rem'} w={[null, '90%','40%']} flexDir={'column'}>
-                    <Button w={'full'} leftIcon={<FontAwesomeIcon icon={faClockRotateLeft}/>}>View posted events/announcements</Button>
+                    <Link href={'/events'}>
+                        <Button w={'full'} leftIcon={<FontAwesomeIcon icon={faClockRotateLeft}/>}>View posted events/announcements</Button>
+                    </Link>
                     <Box w={'full'} mt={'2rem'}>
                         <Table variant={'simple'}>
                             <Tbody>
                                 <Tr>
-                                    <Td>11-4-22</Td>
-                                    <Td>Polytechnic University of the Philippines San Juan Recognition Rites</Td>
+                                    <Td>1-1-23</Td>
+                                    <Td>Webinar: The Future of PUPSJ Programmers</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>11-4-22</Td>
-                                    <Td>Polytechnic University of the Philippines San Juan Recognition Rites</Td>
+                                    <Td>1-3-23</Td>
+                                    <Td>Student Assembly Orientation</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>11-4-22</Td>
-                                    <Td>Polytechnic University of the Philippines San Juan Recognition Rites</Td>
+                                    <Td>1-5-23</Td>
+                                    <Td>Webinar</Td>
                                 </Tr>
                             </Tbody>
                         </Table>
@@ -83,4 +84,4 @@ export default function Events() {
     )
 }
 
-Events.Layout = NavAdmin;
+Events.Layout = NavSuperAdmin;

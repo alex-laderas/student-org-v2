@@ -52,25 +52,25 @@ export default function NavAdmin({children}) {
             <Flex flexDir={'column'} alignItems={'center'} bg={'blackAlpha.100'} >
                 <HStack display={'flex'} p={'1rem'} bg={'white'} m={'2rem'} w={'75%'} minW={'800px'} justifyContent={'space-evenly'} boxShadow={'0px 2px 1px 2px rgba(0, 0, 0, .4)'} >
                     <Box w={'full'}>
-                        <Link href={'/admin/dashboard'} scroll={false}>
+                        <Link href={'/super-admin/dashboard'} scroll={false}>
                             <Button size={'lg'} w={'100%'} variant={'ghost'}>Dashboard</Button>
                         </Link>
                     </Box>
                     <Divider variant={'thick'} h={'100%'} colorScheme={'gray'} orientation="vertical" />
                     <Box w={'full'}>
-                        <Link href={'/admin/events'} scroll={false}>
+                        <Link href={'/super-admin/events'} scroll={false}>
                             <Button size={'lg'} w={'100%'} variant={'ghost'}>Events & Announcements</Button>
                         </Link>
                     </Box>
                     <Divider orientation="vertical" />
                     <Box w={'full'}>
-                        <Link href={'/admin/user-management'} scroll={false}>
+                        <Link href={'/super-admin/user-management'} scroll={false}>
                             <Button size={'lg'} w={'100%'} variant={'ghost'}>User Management</Button>
                         </Link>
                     </Box>
                     <Divider orientation="vertical" />
                     <Box w={'full'}>
-                        <Link href={'/admin/organizations'} scroll={false}>
+                        <Link href={'/super-admin/organizations'} scroll={false}>
                             <Button size={'lg'} w={'100%'} variant={'ghost'}>Organization</Button>
                         </Link>
                     </Box>

@@ -7,7 +7,7 @@ import NavProfile from "../../layout/NavProfile";
 export default function Profile() {
     return (
         <>
-            <Heading my={'auto'} color={'blackAlpha.700'}>
+            <Heading my={'auto'} color={'blackAlpha.700'} >
                 Select a tab from above..
             </Heading>
         </>

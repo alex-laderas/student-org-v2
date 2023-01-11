@@ -1,6 +1,8 @@
-import { Box, Container, Heading, HStack, Button, VStack, Stack, Text, Icon, Flex, Spacer, Input, InputGroup, InputRightElement, SimpleGrid, Divider, Tag, ScaleFade} from "@chakra-ui/react";
+import { Box, Container, Heading, HStack, Button, VStack, Stack, Text, Icon, Flex, Spacer, Input, InputGroup, InputRightElement, SimpleGrid, Divider, Tag, ScaleFade, Image} from "@chakra-ui/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
+
+import {recrites} from '../../public/recrites.png'
 
 import NavMain from "../../layout/NavMain";
 
@@ -19,30 +21,37 @@ export default function Events() {
                 <Heading alignSelf={'center'}>Upcoming Events</Heading>
                 <Flex px={'4rem'} justifyContent={'space-around'} mt={'4rem'}>
                     <SimpleGrid columns={[null, 1, 3]} spacing={10}>
-                        <Box bg={'blackAlpha.100'} minW={'300px'} minH={'300px'} borderRadius={'12px'}>
-                            
+                        <Box position={'relative'} bg={'blackAlpha.100'} minW={'400px'} minH={'300px'} borderRadius={'12px'} p={'1rem'}>
+                            <Heading fontSize={'2xl'}>Student Assembly Orientation</Heading>
+                            <HStack>
+                                <FontAwesomeIcon icon={faCalendar} />
+                                <Text fontWeight={'semibold'}>1-1-23</Text>
+                            </HStack>
+                            <Button colorScheme={'red'} bottom={0} position={"absolute"} mb={'1rem'}>Join</Button>
                         </Box>
-                        <Box bg={'blackAlpha.100'} minW={'300px'} minH={'300px'} borderRadius={'12px'}>
-                            
+                        <Box position={'relative'} bg={'blackAlpha.100'} minW={'400px'} minH={'300px'} borderRadius={'12px'} p={'1rem'}>
+                            <Heading fontSize={'2xl'}>Webinar: The Future of PUPSJ Programmers</Heading>
+                            <HStack>
+                                <FontAwesomeIcon icon={faCalendar} />
+                                <Text fontWeight={'semibold'}>1-3-23</Text>
+                            </HStack>
+                            <Button colorScheme={'red'} position={'absolute'} bottom={0} mb={'1rem'}>Join</Button>
                         </Box>
-                        <Box bg={'blackAlpha.100'} minW={'300px'} minH={'300px'} borderRadius={'12px'}>
-                            
-                        </Box>
-                        <Box bg={'blackAlpha.100'} minW={'300px'} minH={'300px'} borderRadius={'12px'}>
-                            
-                        </Box>
-                        <Box bg={'blackAlpha.100'} minW={'300px'} minH={'300px'} borderRadius={'12px'}>
-                            
-                        </Box>
-                        <Box bg={'blackAlpha.100'} minW={'300px'} minH={'300px'} borderRadius={'12px'}>
-                            
+                        <Box position={'relative'} bg={'blackAlpha.100'} minW={'400px'} minH={'300px'} borderRadius={'12px'} p={'1rem'}>
+                            <Heading fontSize={'2xl'}>Webinar</Heading>
+                            <HStack>
+                                <FontAwesomeIcon icon={faCalendar} />
+                                <Text fontWeight={'semibold'}>1-5-23</Text>
+                            </HStack>
+                            <Button colorScheme={'red'} position={'absolute'} bottom={0} mb={'1rem'}>Join</Button>
                         </Box>
                     </SimpleGrid>
                 </Flex>
             </Flex>
             <Flex border={'1px'} w={'90vw'} mt={'-4px'} mx={'auto'}/>
             <Flex bg={'white'} flexDir={[null, 'column', 'row']} justifyContent={'space-around'} alignItems={'center'} pt={'2rem'}>
-                <VStack mx={'auto'} ml={[null, 'auto', '4rem']} textAlign={[null, 'center', 'left']}>
+                <VStack mx={'auto'} ml={[null, 'auto', '4rem']} textAlign={[null, 'center', 'left']} p={'2rem'}>
+                    <Image src="/recrites.png"/>
                     <Heading>Polytechnic University of the Philippines, San Juan Branch Recognition Rites</Heading>
                 </VStack>
                 <VStack mx={'auto'} mt={[null, '2rem', '0']} mr={[null, 'auto','4rem']}>
@@ -68,7 +77,6 @@ export default function Events() {
                         <Text fontSize={[null, 'xs', 'md']} fontWeight={'semibold'}>General Assembly</Text>
                         </VStack>
                     </Flex>
-                    <Heading size={'xl'} fontWeight={'semibold'}>Active Participants</Heading>
                     <Flex border={'1px'} w={'100%'} />
                 </VStack>
             </Flex>
